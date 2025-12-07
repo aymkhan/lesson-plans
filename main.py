@@ -4,14 +4,16 @@
 '''
 This program returns the lesson plans for ASL 1, 2, and 3.
 	1. Download the clean/final versions of the .docx files and store them in /database
+		a. /database/lessons
+		b. /database/activity
 	2. Read the .docx file for the Lessons (might be 3 files for each class - ASL1, 2, and 3
-	3. Read the .docx file for Activities 
+	3. Read the .docx file for Activities (single file) 
 
 DOCX files:
 	1. LESSONS
 		- Create a Dict to load into pandas DataFrame per course: ASL1, ASL2, and ASL3
-		- Dict should have "Lesson 1", "Lesson 1.2", "Lesson 2" as KEYS
-		- Dict should have the vocab words per lesson as the VALUES
+		- Dict should have Lesson numbers as KEYS, for ex: "Lesson 1", "Lesson 1.2", "Lesson 2" 
+		- Dict should have the vocab words per lesson as VALUES
 		- Example Dict:
 			ASL1 = {
 				"Lesson 1":["hello", "good morning", "good night"],
@@ -32,7 +34,24 @@ USER INPUT TO WRITE NEW LESSONS:
 				- APPEND to ASL1 Dict
 			- so on..
 				
-
-
-
 '''
+
+# Start the program
+
+import find_lessons
+
+find_lessons.start()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
